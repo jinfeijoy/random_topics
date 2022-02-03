@@ -1,7 +1,7 @@
 # Compare Different Dataset / Distribution Method
 
 * [Z Test](http://homework.uoregon.edu/pub/class/es202/ztest.html)
-* [KS Test](https://towardsdatascience.com/how-to-compare-two-distributions-in-practice-8c676904a285)
+* [KS Test](https://towardsdatascience.com/how-to-compare-two-distributions-in-practice-8c676904a285): it will generate CDF for both and find a distance measure between the two.
 * [T Test](https://compgenomr.github.io/book/how-to-test-for-differences-between-samples.html): The t-test is used for continuous data to compare differences in means between two groups (either paired or unpaired).2 It is based on Student’s t-distribution (sometimes referred to as just the tdistribution). This distribution is particularly important when we wish to estimate the mean (or mean difference between groups) of a Normally distributed population but have only a small sample
 * [Visualizations](https://flowingdata.com/2012/05/15/how-to-visualize-and-compare-distributions/)
   * Box-and-Whisker Plot
