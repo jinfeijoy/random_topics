@@ -2,8 +2,8 @@
 
 ## Summary
 
-|Serial No.|	Package	Plots |used in this kernel	|Remark	|Nature of plots|
-| -------- |:--------------:|:------------------:|:-----:|:-------------:|
+|Serial No.|	Package	Plots |Example	|Remark	|Nature of plots|
+| -------- |:--------------:|:-------:|:-----:|:-------------:|
 |1	|Matplotlib	|1. vendor_id histogram, 2. store and fwd flag histogram	|Matplotlib is oldest and most widely used python visualization package, its a decade old but still its the first name come to our mind when it comes to plotting. Many libraries are built on top of it, and uses its functions in the backend. Its style is very simple and that's the reason plotting is fast in this. It is used to create axis and design the layout for plotting using other libraries like seaborn.||
 |2	|Seaborn	|1.Violin plot (passenger count vs trip duration), 2. Boxplots( Weekday vs trip duration, 3. tsplot (hours, weekday vs avg trip duration), 4. distplots of lat-long, and trip_duration	|Seaborn is my favorite plotting library (Not at all a fan of house greyjoy though :P) Plots from this package are soothing to eyes. Its build as a wrapper on matplotlib and many matplotlib's functions are also work with it.colors are amazing in this package's plots||
 |3	|Pandas	|1. Parallel coordinates (for cluster characteristics)	|Pandas also offer many plotting functions and it's also a package built on matplotlib, so you need to know matplotlib to tweak the defaults of pandas. It offers Alluvial plots (which are nowhere near what R offers as alluvial plots) which are used in this notebook to show cluster characteristics.||
@@ -19,5 +19,5 @@
 |13	|Holoviews	|1. Pairplot for feature interaction.	|Holoviews is another alternative for making interactive visualizations, this package offers artistic plots. But you need really good RAM etc to use this package, else the notebook will get hang. plots exported to HTML works perfectly fine	|interactive|
 
 ## Reference
-* []()
-* []()
+* [Strength of visualization-python visuals tutorial](https://www.kaggle.com/code/maheshdadhich/strength-of-visualization-python-visuals-tutorial)
+* [Python Data Visualization Libraries for Business Analytics](https://mode.com/blog/python-data-visualization-libraries/)
