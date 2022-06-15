@@ -22,9 +22,22 @@
 * Hadoop Ecosystem
   * MapReduce is used for making Big Data magageable by processing them in clusters; Yet Another Resource Negotiator (YARN) is the resource manager across clusters..
   * ![image](https://user-images.githubusercontent.com/16402963/173707529-c5b59088-a996-436a-90ab-5ea7f4024d0e.png)
-* HDFS 
+* HDFS (Hadoop Distributed File System)
+  * Blocks: 
+    * Minimum amount of data that can be read or written
+    * Provides fault tolerance
+    * Default size is 64MB or 128MB
+  * Replication: save copy of blocks in racks for backup purpose
+  * Rack awareness helps reduce the network traffic and improve cluster performance
+  * Read and Write Operations: allows write once read many operations
 * HIVE
+  * Hive is data warehouse software within Hadoop that is designed for reading, writing and managing tabular-type datasets and data analysis. 
 * HBASE
+  * works well with real-time data and random read and write access to Big Data
+  * HBase is used for write-heavy applications to process large amount of data and provide analytics in real time.
+  * Difference between HDFS and HBASE:
+    * ![image](https://user-images.githubusercontent.com/16402963/173711304-0b9ab68f-b605-4b00-8850-a4fd520ee21e.png)
+ 
 ## Apache Spark
 
 ## DataFrames and SparkSQL
