@@ -39,6 +39,19 @@
     * ![image](https://user-images.githubusercontent.com/16402963/173711304-0b9ab68f-b605-4b00-8850-a4fd520ee21e.png)
  
 ## Apache Spark
+* ![image](https://user-images.githubusercontent.com/16402963/173941242-c348d1df-4623-423d-aa74-9e73507ef2d5.png)
+* RDD (Resilient Distributed Dataset)
+  * Spark's primary data abstraction
+  * Immutable (cannot be changed once created)
+  * ![image](https://user-images.githubusercontent.com/16402963/173942246-c44616e2-5a2b-46ae-94d2-88270192ba41.png)
+  * Creating an RDD in Spark:
+    * Use an external or local file from Hadoop-supported file system such as: HDFS/Cassandra/HBase/Amazon S3
+    * Create an RDD from a collection: 
+       ```
+       data = [1,2,3,4,5]
+       distData = sc.parallelize(data
+       ``` 
+    * Apply a transformation on an existing RDD to create a new RDD
 
 ## DataFrames and SparkSQL
 
