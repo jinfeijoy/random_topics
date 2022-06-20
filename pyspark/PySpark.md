@@ -54,10 +54,29 @@
     * Apply a transformation on an existing RDD to create a new RDD
 
 ## DataFrames and SparkSQL
+* DataFrames
+    ```
+    mtcars = pd.read_csv('mtcars.csv')
+    sdf = spark.createDataFrame(mtcars)
+    sdf.printSchema()
+    sdf.show(5)
+    sdf.select('mpf').show(5) #mpf is 1 column
+    sdf.filter(sdf['mpf']<18).show(5)
+    car_count = sdf.groupby(['cyl']).agg({'wt':'count'})\.sort('count(wt)',ascending=False).show(5)
+    ```
+ * SparkSQL
+    ```
+    # create dataframe
+    df = spark.read.json('people.json')
+    # create temp view
+    df.createTempView('people')
+    spark.sql("SELECT * FROM people").show()
 
-## Development and Runtime Environment Options
+    df.createGlobalTempView('people')
+    # create global temp view
+    spark.sql("SELECT * FROM global_temp.people").show()
 
-## Monitoring & Tuning
+    ```
 
 ## Reference
 * [Spark with Python (PySpark) Tutorial For Beginners](https://sparkbyexamples.com/pyspark-tutorial/)
