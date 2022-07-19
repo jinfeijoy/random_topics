@@ -17,7 +17,7 @@
 |11	|No package	|1. heatmaps of NYC taxi traffic	|Instead of depending on data-shadder, I tried plotting the heatmap of traffic data with a row image, you will get to know the basics of image processing( reading image, color schemes that's all :P ) and how such basic exercise can result in traffic heatmap||
 |12	|Datashader	|1.locations' heatmap	|If you really have a very large size of data that you want to plot on a map, data shader is one of the best easiest option available in marker. But I found that row image processing and generating plots using a scipy.mics or cv2 is considerably faster than using this package.	|interactive|
 |13	|Holoviews	|1. Pairplot for feature interaction.	|Holoviews is another alternative for making interactive visualizations, this package offers artistic plots. But you need really good RAM etc to use this package, else the notebook will get hang. plots exported to HTML works perfectly fine	|interactive|
-|14 |Dexplot | | | |
+|14 |Dexplot | histogram/bar plot | | |
 
 
 ## Reference
