@@ -38,3 +38,6 @@
     * all tasks in the project should go through all the steps of the workflow
     * users should be able to see all the columns of the workflow, so keep the number of steps to 7 or less.
     * make sure a single person on your team only needs to care about 1 project and 1 board in Jira at a time.
+
+* Overall
+    * Epics: an epic is a story that is too big for a single sprint, it's broken down into multiple user stories. When those are done, the epic is complete.
