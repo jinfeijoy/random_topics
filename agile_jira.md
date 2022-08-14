@@ -41,3 +41,14 @@
 
 * Overall
     * Epics: an epic is a story that is too big for a single sprint, it's broken down into multiple user stories. When those are done, the epic is complete.
+        * ![image](https://user-images.githubusercontent.com/16402963/184557293-025c980d-b4da-4551-8a6d-1165bf36d96d.png)
+    * Issue/Projects: filds hold your data (example filds: description/summary/assignee/due date)
+    * Projects: container for issues
+        * ![image](https://user-images.githubusercontent.com/16402963/184557567-7e7d3c48-40b4-408c-a62e-a9c8eb123d13.png)
+    * 
+
+   
+
+
+## Reference
+* https://www.youtube.com/watch?v=nHuhojfjeUY 
