@@ -46,8 +46,7 @@
     * Projects: container for issues
         * ![image](https://user-images.githubusercontent.com/16402963/184557567-7e7d3c48-40b4-408c-a62e-a9c8eb123d13.png)
         * ![image](https://user-images.githubusercontent.com/16402963/184950381-d7819b29-b6ad-49be-bded-1d1215bfd000.png)
-
-    * 
+    * 2-week-sprint -> few Epics in each sprint (same epic can be extend to few sprint) -> stories in each epic can be assigned to different people -> few tasks in each story
 
    
 
