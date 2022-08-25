@@ -23,4 +23,9 @@ sql_query = (
 dataset = pd.read_sql(sql_query, connection, params = parameters)
 connection.close()
 ```
-
+* dynamically create data frames
+```
+table_list = list(sample_data.keys())
+for table_name in table_list:
+  vars()[table_name]=pd.DataFrame(sample_data_V1[table_name])
+```
