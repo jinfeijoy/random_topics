@@ -47,3 +47,28 @@
       * compute similarity between h and each embedding by dot product 
       * normalize the similarities to a probability distribution
       * to maximize the probability for the true target stock we can minimise L
+      * ![Screenshot 2022-11-02 095235](https://user-images.githubusercontent.com/16402963/199719796-dd042c87-0313-446c-8762-4ec2607b62d8.png)
+* Using NLP to process loan review document to summarize key features to reduce manual work
+  *  ![Screenshot 2022-11-02 102223](https://user-images.githubusercontent.com/16402963/199721083-827fc5cd-5834-440d-850d-7e8fbd853bb7.png)
+  *  ![Screenshot 2022-11-02 102403](https://user-images.githubusercontent.com/16402963/199721102-f6b50f20-ef53-4845-99c5-8be233f901d5.png)
+  *  ![Screenshot 2022-11-02 102514](https://user-images.githubusercontent.com/16402963/199721125-e75b2de3-99ff-42f3-8d9f-b8aba41cf333.png)
+  *  ![Screenshot 2022-11-02 102649](https://user-images.githubusercontent.com/16402963/199721145-a4c30ba6-54a7-4a65-9718-692d8b919518.png)
+
+* MANA-Net: A market attention-weighted news aggregation network for stock price prediction
+  * 3 functions can be used:
+    * ![Screenshot 2022-11-02 103736](https://user-images.githubusercontent.com/16402963/199722147-f909a723-0863-42f4-ad2e-7e1fc63ddd8a.png) 
+    * query -- stock data (
+    * key -- news data (to search which news impact the market more)
+      * ![Screenshot 2022-11-02 103502](https://user-images.githubusercontent.com/16402963/199722176-46a8e2fa-5da7-4ca5-8d6f-4d3caecd3ef7.png) 
+    * value --  
+    * ![Screenshot 2022-11-02 103812](https://user-images.githubusercontent.com/16402963/199722508-3f37348a-361c-41a9-ac20-d6fcb958dc96.png)
+    * ![Screenshot 2022-11-02 103835](https://user-images.githubusercontent.com/16402963/199722525-205ffbc8-0807-4960-9f65-a5f840e54006.png)
+    * ![Screenshot 2022-11-02 103944](https://user-images.githubusercontent.com/16402963/199722546-22177abb-5ccc-4696-902a-a9b1b42e044e.png)
+  * Benchmark Model: SVM/Gaussian Process Classifier / logistic regression/ shallow network/ MLP/ CNN
+  * Metrics: accuracy / profit&loss (daily)/ Sharpe ratio(daily)
+  * using past few day's history news works in this case
+  
+* Spatial-Temporal stock movement prediction and portfolio selection based on the semantic company relational graph
+  *   ![Screenshot 2022-11-02 105025](https://user-images.githubusercontent.com/16402963/199724388-9fb45fb1-0a57-4fdf-ac5e-08b0dc1ee3c5.png)
+
+* Learning embedded representation of the stock correlations matrix using graph machine learning
