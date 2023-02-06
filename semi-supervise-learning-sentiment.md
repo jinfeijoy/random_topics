@@ -6,6 +6,7 @@ Problem: 5% data has label as different sentiment based on twitter's tweets. 5 c
 * Labeling Functions
   * rule-based LFs
   * Keywork-based LFs
+  * Heuristic LF
   * Contextual LFs
   * Expert-based LFs
   * Hybrid LFs
@@ -36,4 +37,23 @@ Problem: 5% data has label as different sentiment based on twitter's tweets. 5 c
 
 ### Approach 2
 * Snorkel: provides a package that can programmatically label unlableled dataset with customized labelling functions based on human expertise or pre-trained existing models. Also provide decorate functions to create preprocessors to enrich dataset.
-* 
+* Combine Labeling Function Outputs:
+  * analysis on existing LFs
+  * remove/optimize high-conflicted functions
+  * combing LFs
+    * majority vote model
+      * LFs don't have same weights
+      * many LFs are correlated 
+    * label model   (??)
+      * LFs have different weights, trained by model itself
+      * only requires partial labeled dataset as input
+      * prediction more robust 
+* Classification:
+  * combine sentiment (Vader) and emotion (anger,joy,optimism, sadness) scores 
+  * automl in FLAML, AzureML to find best model
+    * estimator list: lgbm, xgboost, xgb_limitdepth, catboost, rf, extra_tree
+* End-to-end
+  *                  Label Function       -> Snorkel -> (label)
+  * Original Tweets                                               -> AutoML Classification -> Final Model
+  *                  Feature Engineering             -> (label) 
+  
