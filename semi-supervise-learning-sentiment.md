@@ -57,3 +57,6 @@ Problem: 5% data has label as different sentiment based on twitter's tweets. 5 c
   * Original Tweets                                               -> AutoML Classification -> Final Model
   *                  Feature Engineering             -> (label) 
   
+### Approach 3
+* Self-training
+* initialize training -> labelled data -> model training -> get predicted-probabilities of all the remaining non-labelled data -> if predicted probabilities of all the remaining non-labelled data < threshold OR no non-labelled data left -> (Add non-labelled data with predicted probability > threshold and predicted label to the training process and assign this data to the step before model training) OR (stop training)
