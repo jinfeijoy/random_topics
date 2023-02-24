@@ -4,10 +4,10 @@
 * Mean Absolute Percentage Error (MAPE)
     * ![image](https://user-images.githubusercontent.com/16402963/221255443-e5500982-68f2-492f-b3e3-ff7f5d284a6b.png)
     * Advantages
-          * Expressed as a percentage, which is scale-independent and can be used for comparing forecasts on different scales. We should remember though that the values of MAPE may exceed 100%.
-          * Easy to explain to stakeholders.
+        * Expressed as a percentage, which is scale-independent and can be used for comparing forecasts on different scales. We should remember though that the values of MAPE may exceed 100%.
+        * Easy to explain to stakeholders.
     * Shortcomings
-          * MAPE takes undefined values when there are zero values for the actuals, which can happen in, for example, demand forecasting. Additionally, it takes extreme values when the actuals are very close to zero.
+         * MAPE takes undefined values when there are zero values for the actuals, which can happen in, for example, demand forecasting. Additionally, it takes extreme values when the actuals are very close to zero.
           * MAPE is asymmetric and it puts a heavier penalty on negative errors (when forecasts are higher than actuals) than on positive errors. This is caused by the fact that the percentage error cannot exceed 100% for forecasts that are too low. While there is no upper limit for the forecasts which are too high. As a result, MAPE will favor models that under-forecast rather than over-forecast.
           * MAPE assumes that the unit of measurement of the variable has a meaningful zero value. So while forecasting demand and using MAPE makes sense, it does not when forecasting temperature expressed on the Celsius scale (and not only that one), as the temperature has an arbitrary zero point.
           * MAPE is not everywhere differentiable, which can result in problems while using it as the optimization criterion.
@@ -15,10 +15,10 @@
 * symmetric Mean Absolute Percentage Error (SMAPE)
     * ![image](https://user-images.githubusercontent.com/16402963/221255483-32e6a2d0-f564-4276-96b0-1c287bf2f638.png)
     * Advantages
-          * Expressed as a percentage.
+         * Expressed as a percentage.
           * Fixes the shortcoming of the original MAPE — it has both the lower (0%) and the upper (200%) bounds.
     * Shortcomings
-          * Unstable when both the true value and the forecast are very close to zero. When it happens, we will deal with division by a number very close to zero.
+         * Unstable when both the true value and the forecast are very close to zero. When it happens, we will deal with division by a number very close to zero.
           * sMAPE can take negative values, so the interpretation of an “absolute percentage error” can be misleading.
           * The range of 0% to 200% is not that intuitive to interpret, hence often the division by the 2 in the denominator of the sMAPE formula is omitted.
           * Whenever the actual value or the forecast has the value is 0, sMAPE will automatically hit the upper boundary value.
