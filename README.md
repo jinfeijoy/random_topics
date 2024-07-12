@@ -5,3 +5,7 @@
 * [Fraud Detection](https://github.com/jinfeijoy/random_topics/blob/main/fraud_detection.md)
 * [Set Up Jupyter Lab](https://github.com/jinfeijoy/random_topics/blob/main/setup_jupyterLab.md)
 * [PySpark](https://github.com/jinfeijoy/random_topics/tree/main/pyspark)
+
+# resource library 
+* https://www.jeremyjordan.me
+* Read stories from Monodeep Mukherjee on Medium: https://medium.com/@monocosmo77
