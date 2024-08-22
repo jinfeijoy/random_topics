@@ -10,3 +10,5 @@
     * Graph attention networks (GAT): combine attention with CNN
 * [Memory networks](https://d3c33hcgiwev3.cloudfront.net/g9POF4pUR4uTzheKVEeLMw_8b70f6ca6d4944abad7858e59ccc6be5_lec11-memory-network.pdf?Expires=1724457600&Signature=I0L50yZCXeWJRumYCbddiTS4FXiS9ExOA56ewwuioRZ2-fwlfIqFvcKefH9xGYmWCOIDW3Vic5DSEPCK4anGxgcnzFXrbgHH~rQimxbJ8wLxBuezT6UjBdZzrKAGFsa2p8cCKvP5YRLRETO5b4RRyLxlNp19Qqc5-KfINp7KVs4_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
 * [Deep Generative Models](https://d3c33hcgiwev3.cloudfront.net/aD-03HDNSfm_tNxwzYn5Jg_3889af6b109d41b680d9c610cfa7f7d2_lec12-generative-models.pdf?Expires=1724457600&Signature=ZYQ95JoJ1qaT~biwJgAcvFafgyfYnbaN-LMiDCN7MvupLzwjW1Qs-gf-EZnvVfJX6WepSKQ-8YiNY5rJyTR2bUMIFQ8l2sm2FxXp63bu4B2SWPC892nnOuq7dZv97gfZknQplcWzbLzxMphWffFvZqMpC2AZJgpdpgFYoIB3ZoI_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
+
+# Assignment: https://github.com/dennislamcv1/UoIDLHealthcare/tree/main 
