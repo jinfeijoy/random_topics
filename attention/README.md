@@ -44,7 +44,31 @@
    * BERT
       * context specific embedding: BERT computes dynamic embedding for each word (word2vec is static embedding for each word)
       * masked language model: BERT masks x% input words, and try to predict what they are (existing deep learning model: RNN or bidirectional RNN, from left to right or right to left) 
- 
+    * Doctor2Vec
+       * ![image](https://github.com/user-attachments/assets/3878f42f-bc26-418e-8a96-f168921065a2)
+          * hierarchical patient embedding: bi-LSTM
+          * multimodel trail embedding: pretrained BERT using MIMIC text data to extract embeddings for each word, then query embedding (text using BERT, categorical using MLP) -> query for memory network
+          * dynamic doctor memory network:
+             * input: convert patient embedding to memory
+             * generalization: LSTM layer to dynamically update new patient memory
+             * Output: attentional memory retrieval to learn doctor embedding only based on trail-specific memory
+             * response: concat, to get doctor embedding
+          *  prediction: Y = Softtmax([Docemb, Qemb(I); Docstatic])
+     * GAMENet: recommend medication
+        *  patient history + [Diagnosis + Procedure from current visit] => Medication combination at visit t
+        *  complex dependency , drug-drug interaction , patient history
+        *  Patient representation module (1 for diagnostics 1 for procedure): input -> embeddings - > dual RNN -> patient representation
+        *  Graph augmented memoryr module:
+           * I: input: patient representation
+           * G: static memory (memory bank):
+                * integrate static knowledge graphs (for drugs), include co-prescription patterns and drug-drug interaction knowledge, output medication embedding Mb;
+                * dynamic memory (incoporate patient medication history), keys: patient query, values: medication history, query given current patient to find medication embedding
+           * O: patient query, output from static memory, output from dynamic memory
+           * P: medication prediction 
+     * G-BERT: pre-trained model for medication recommendation
+        *  patient data -> patient history -> current diagnosis -> medical embedding -> medication recommendation
+        *  to improve accuracy: pre-training, dependencies among code, hierachical knowledge
+        *  Ontology embedding learning -> visit embedding & pre-training -> fine-tuning & recommending 
 * [Deep Generative Models](https://d3c33hcgiwev3.cloudfront.net/aD-03HDNSfm_tNxwzYn5Jg_3889af6b109d41b680d9c610cfa7f7d2_lec12-generative-models.pdf?Expires=1724457600&Signature=ZYQ95JoJ1qaT~biwJgAcvFafgyfYnbaN-LMiDCN7MvupLzwjW1Qs-gf-EZnvVfJX6WepSKQ-8YiNY5rJyTR2bUMIFQ8l2sm2FxXp63bu4B2SWPC892nnOuq7dZv97gfZknQplcWzbLzxMphWffFvZqMpC2AZJgpdpgFYoIB3ZoI_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
 
 # Assignment: 
