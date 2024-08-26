@@ -29,8 +29,10 @@
 * transformer
    * transformer is an effective embedding method for sequential data using self-attention strategy, to make seq2seq model with attention train faster 
    * ![image](https://github.com/user-attachments/assets/0ef626aa-de71-48d8-87e8-aa37a4d42460)
-   * ![image](https://github.com/user-attachments/assets/6afd8880-f988-40f4-b586-17f3988d6bc3)
-      * Three verrsion of embedding can be trained in parallel: Q: query, K: key, V: value  
+   * Three verrsion of embedding can be trained in parallel: Q: query, K: key, V: value  
+      * ![image](https://github.com/user-attachments/assets/6afd8880-f988-40f4-b586-17f3988d6bc3)
+   * multi-head attention: repeat the same attention procedure multiple times with different initialization
+   * position-encoding: add some position specific information to the input
    * 
  
 * [Deep Generative Models](https://d3c33hcgiwev3.cloudfront.net/aD-03HDNSfm_tNxwzYn5Jg_3889af6b109d41b680d9c610cfa7f7d2_lec12-generative-models.pdf?Expires=1724457600&Signature=ZYQ95JoJ1qaT~biwJgAcvFafgyfYnbaN-LMiDCN7MvupLzwjW1Qs-gf-EZnvVfJX6WepSKQ-8YiNY5rJyTR2bUMIFQ8l2sm2FxXp63bu4B2SWPC892nnOuq7dZv97gfZknQplcWzbLzxMphWffFvZqMpC2AZJgpdpgFYoIB3ZoI_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
