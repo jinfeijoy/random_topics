@@ -29,11 +29,21 @@
 * transformer
    * transformer is an effective embedding method for sequential data using self-attention strategy, to make seq2seq model with attention train faster 
    * ![image](https://github.com/user-attachments/assets/0ef626aa-de71-48d8-87e8-aa37a4d42460)
-   * Three verrsion of embedding can be trained in parallel: Q: query, K: key, V: value  
-      * ![image](https://github.com/user-attachments/assets/6afd8880-f988-40f4-b586-17f3988d6bc3)
-   * multi-head attention: repeat the same attention procedure multiple times with different initialization
-   * position-encoding: add some position specific information to the input
-   * 
+   * Encoder
+      * Three verrsion of embedding can be trained in parallel: Q: query, K: key, V: value  
+         * ![image](https://github.com/user-attachments/assets/6afd8880-f988-40f4-b586-17f3988d6bc3)
+      * multi-head attention: repeat the same attention procedure multiple times with different initialization
+      * position-encoding: add some position specific information to the input
+   * Decoder
+      * output embeddings of encoder become the input to decoder
+      * self-attention with future mask
+         * ![image](https://github.com/user-attachments/assets/69741ba7-08ea-45fc-b3c2-c20a3e661203)
+      * encoder-decoder attention
+         *  keys K and values V from the encoder are reused in encoder-decoder attention
+      * ![image](https://github.com/user-attachments/assets/e3621b3b-5c80-4b3e-9120-1f548957dbd5)
+   * BERT
+      * context specific embedding: BERT computes dynamic embedding for each word (word2vec is static embedding for each word)
+      * masked language model: BERT masks x% input words, and try to predict what they are (existing deep learning model: RNN or bidirectional RNN, from left to right or right to left) 
  
 * [Deep Generative Models](https://d3c33hcgiwev3.cloudfront.net/aD-03HDNSfm_tNxwzYn5Jg_3889af6b109d41b680d9c610cfa7f7d2_lec12-generative-models.pdf?Expires=1724457600&Signature=ZYQ95JoJ1qaT~biwJgAcvFafgyfYnbaN-LMiDCN7MvupLzwjW1Qs-gf-EZnvVfJX6WepSKQ-8YiNY5rJyTR2bUMIFQ8l2sm2FxXp63bu4B2SWPC892nnOuq7dZv97gfZknQplcWzbLzxMphWffFvZqMpC2AZJgpdpgFYoIB3ZoI_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
 
