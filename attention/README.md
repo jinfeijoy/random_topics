@@ -9,6 +9,30 @@
     * Message passing neural network (MPNN)
     * Graph attention networks (GAT): combine attention with CNN
 * [Memory networks](https://d3c33hcgiwev3.cloudfront.net/g9POF4pUR4uTzheKVEeLMw_8b70f6ca6d4944abad7858e59ccc6be5_lec11-memory-network.pdf?Expires=1724457600&Signature=I0L50yZCXeWJRumYCbddiTS4FXiS9ExOA56ewwuioRZ2-fwlfIqFvcKefH9xGYmWCOIDW3Vic5DSEPCK4anGxgcnzFXrbgHH~rQimxbJ8wLxBuezT6UjBdZzrKAGFsa2p8cCKvP5YRLRETO5b4RRyLxlNp19Qqc5-KfINp7KVs4_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
+   *  the original memory network uses this external memory component to assist deep neural network. The idea is to try to remembering and storing information that can be useful.
+      *  ![image](https://github.com/user-attachments/assets/0c919a44-679f-4700-93e7-b192e70e1ded)
+      *  I: input feature map,
+         *  convert input x to an internal feature representation,
+         *  options: simple bag of words - one hot encoding / RNN if the input are sequencs
+      *  G: generalization:
+         * updates old memories given new input x
+         * mi = G(mi, I(x), m) for all i. for each memory slot, try to get function G with I(x) and entire m
+         * simplest version is to store I(x) in a slot of memory, mH(x) = I(x) where H(x) is the has function for finding the memory location to store 
+      *  O: output feature map
+         * ![image](https://github.com/user-attachments/assets/08a0e549-64be-4db6-ba07-189561f11f7c)
+      *  R: response
+         * map output to the final  response r=R(o)
+         * e.g. softmax for classification, RNN for sequence generation
+   * End-to-end memory network: replace the argmax with softmax with attention
+      * ![image](https://github.com/user-attachments/assets/0876df10-d13d-45e9-83e7-4366c9d73482)
+      * key ideas: use softmax attention to replace argmax operation / use question answer template to model memory network / allow end-to-end training
+* transformer
+   * transformer is an effective embedding method for sequential data using self-attention strategy, to make seq2seq model with attention train faster 
+   * ![image](https://github.com/user-attachments/assets/0ef626aa-de71-48d8-87e8-aa37a4d42460)
+   * ![image](https://github.com/user-attachments/assets/6afd8880-f988-40f4-b586-17f3988d6bc3)
+      * Three verrsion of embedding can be trained in parallel: Q: query, K: key, V: value  
+   * 
+ 
 * [Deep Generative Models](https://d3c33hcgiwev3.cloudfront.net/aD-03HDNSfm_tNxwzYn5Jg_3889af6b109d41b680d9c610cfa7f7d2_lec12-generative-models.pdf?Expires=1724457600&Signature=ZYQ95JoJ1qaT~biwJgAcvFafgyfYnbaN-LMiDCN7MvupLzwjW1Qs-gf-EZnvVfJX6WepSKQ-8YiNY5rJyTR2bUMIFQ8l2sm2FxXp63bu4B2SWPC892nnOuq7dZv97gfZknQplcWzbLzxMphWffFvZqMpC2AZJgpdpgFYoIB3ZoI_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
 
 # Assignment: 
