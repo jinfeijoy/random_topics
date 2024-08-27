@@ -70,6 +70,18 @@
         *  to improve accuracy: pre-training, dependencies among code, hierachical knowledge
         *  Ontology embedding learning -> visit embedding & pre-training -> fine-tuning & recommending 
 * [Deep Generative Models](https://d3c33hcgiwev3.cloudfront.net/aD-03HDNSfm_tNxwzYn5Jg_3889af6b109d41b680d9c610cfa7f7d2_lec12-generative-models.pdf?Expires=1724457600&Signature=ZYQ95JoJ1qaT~biwJgAcvFafgyfYnbaN-LMiDCN7MvupLzwjW1Qs-gf-EZnvVfJX6WepSKQ-8YiNY5rJyTR2bUMIFQ8l2sm2FxXp63bu4B2SWPC892nnOuq7dZv97gfZknQplcWzbLzxMphWffFvZqMpC2AZJgpdpgFYoIB3ZoI_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
+   * GANs
+      * to create new samples that resemble training data to train 2 neural network:
+         * <img width="703" alt="image" src="https://github.com/user-attachments/assets/da667417-2744-4597-bc43-7000ad36cb05">
+         * generator: create realistic but synthetic samples
+         * discriminator: differenciating synthetic samples with real sample
+         * challange: hard to tell when to stop
+   * Variational Autoencoder (VAE)
+      * generative model for creating realistic sample data by combining deeplearning and probabilistic graphical model
+      * <img width="702" alt="image" src="https://github.com/user-attachments/assets/d9cc5d81-e75f-455b-a220-491be6446e40">
+      * encoder: try to learn distribution parameter of N distribution
+      * loss function: reconstruction error + encoder distribution close to normal distribution 
+   
 
 # Assignment: 
 https://github.com/dennislamcv1/UoIDLHealthcare/tree/main 
