@@ -41,3 +41,7 @@ All hidden layers usually use the same activation function. However, the output 
 * Hidden Layer
     * Convolutional Neural Network (CNN): ReLU activation function.
     * Recurrent Neural Network: Tanh and/or Sigmoid activation function.
+ 
+* vanishing or exploding
+   * vanishing: never converge to optimal result, lose early layer information
+   * exploding: big weight updates and converge too fast 
