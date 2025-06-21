@@ -10,10 +10,12 @@
 * **Build simple RAG applications** [example](https://github.com/openai/openai-cookbook/blob/main/examples/chatgpt/rag-quickstart/azure/Azure_AI_Search_with_Azure_Functions_and_GPT_Actions_in_ChatGPT.ipynb) — This involves connecting AI models to your own data sources using vector databases and embedding techniques, so they can answer your queries more effectively.
 * **Experiment with different pre-trained models** — Using resources like Hugging Face to access models others have created. This gives you experience with different model architectures without having to train or finetune them yourself.
 * **Basic application architecture** — You’ll start learning how to structure AI applications with proper input handling, context construction, and output processing.
+* [AI Engineering Specialization](https://www.coursera.org/programs/manulife-learning-program-zgh8l/specializations/ai-engineering)
 
 ## More to Learn (4M) 
 * AI Application: OpenAI API, Hugging Face model and dataset, LangChain for building applications with language models/prompts/chains/agents, pinecone vector database for efficient similarity search and recommendation systems, LLMOps
 * AI engineer for Data Scientist: PyTorch, Fine tune LLMs (Llama3), AI model in LangChain, DL with PyTorch, responsible AI data management, Llama3
+* [IBM AI Engineering Professional Certificate](https://www.coursera.org/programs/manulife-learning-program-zgh8l/professional-certificates/ai-engineer?source=search)
 
 ## Towards professional AI engineering
 * Deep Learning — Understanding the intricacies of neural networks, training processes, and how foundation models work. Learn about transformer architecture, attention mechanisms, and how embeddings capture meaning.
